@@ -1,0 +1,79 @@
+/* Wrappers */
+
+.wrapper-main {
+    margin: 3vh 20vw;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background: black;
+}
+
+.wrapper-gallery {
+    margin: 0 20vw;
+}
+
+/* Default text styling */
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+}
+
+/* Page styling */
+
+#header-main nav {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    grid-template-rows: auto;
+    padding-bottom: 2px;
+}
+
+#header-main nav p {
+    color: #e50914;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* border-right: #e50914 solid 3px; */
+}
+
+#header-main nav ul {
+    justify-self: end;
+}
+
+#header-main nav ul li {
+    display: inline-block;
+    list-style: none;
+    justify-self: end;
+    margin: 40px 0 40px 30px;
+    /* padding: 0 0 5px 0; */
+    /* border-bottom: #e50914 solid 1px; */
+}
+
+#header-main nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#header-main nav ul li :hover {
+    color: rgb(253, 253, 253);
+    background: #e50914;
+    padding: 5px;
+}
+
+#header-main #games {
+    color: rgb(253, 253, 253);
+    background: #e50914;
+    padding: 5px;
+}

@@ -1,0 +1,95 @@
+.all-wrap {
+    background: white;
+    max-width: 70vw;
+    padding: 1rem 10rem;
+    margin: auto;
+}
+
+body {
+    background: url(/img//background.gif);
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #333; */
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-sm img {
+    max-width: 20%;
+    min-height: 100px;
+    max-height: 200px;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.img-lg {
+    width: 100%;
+    margin-top: 1.3rem;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+.img-note {
+    display: block;
+    font-size: 0.7rem;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+.card-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin: 0;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.context {
+    margin: 1rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+#showcase {
+    max-width: 99vw;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/SoftwareCodeOwner_Blog_1920x1080.jpg);
+    color: #fff;
+}
+
+#showcase h1 {
+    position: relative;
+    max-width: 80vw;
+    margin: auto;
+    padding-top: 3rem;
+    font-size: 2rem;
+    z-index: 100;
+}
+
+#showcase p {
+    position: relative;
+    max-width: 80vw;
+    margin: auto;
+    padding-bottom: 3rem;
+    z-index: 2;
+}
+
+.span-lg {
+    font-size: 1.5rem;
+}
