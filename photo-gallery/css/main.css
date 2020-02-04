@@ -1,7 +1,9 @@
 /* Wrappers */
 
 .wrapper-main {
-    margin: 3vh 20vw;
+    margin: 1vh 20vw;
+    max-height: 100vh;
+    
 }
 
 .hidden {
@@ -10,6 +12,7 @@
 
 body {
     background: black;
+    
 }
 
 .wrapper-gallery {
@@ -39,12 +42,11 @@ h2 {
 
 #header-main nav p {
     color: #e50914;
-    margin-top: 20px;
+    margin-top: 0.1vh;
     margin-bottom: 20px;
     font-size: 2rem;
     font-weight: bold;
     padding-left: 10px;
-    padding-top: 10px;
     /* border-right: #e50914 solid 3px; */
 }
 
@@ -56,7 +58,7 @@ h2 {
     display: inline-block;
     list-style: none;
     justify-self: end;
-    margin: 40px 0 40px 30px;
+    margin: 1vh 0 40px 30px;
     /* padding: 0 0 5px 0; */
     /* border-bottom: #e50914 solid 1px; */
 }

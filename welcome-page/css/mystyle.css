@@ -15,7 +15,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font: normal 100% Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     background: black;
     color: #999;
@@ -41,6 +41,56 @@ p {
 
 img {
     width: 100%;
+}
+
+.text-dark {
+    color: #999;
+}
+
+.text-lg {
+    font-size: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.table {
+    
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table thead th {
+    padding: 0.6rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.table tbody tr td {
+    color: #999;
+    font-size: 0.7rem;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.table tbody tr td:first-child {
+    text-align: left;
+}
+
+.table thead tr th:first-child {
+    text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+    background: #222;
+}
+
+.table tbody tr:nth-child(even) {
+    color: white;
 }
 
 /* showcase */
@@ -166,7 +216,7 @@ img {
 }
 
 .tabs .container>div {
-    padding: 0.5rem;
+    padding: 0.5rem;    
 }
 
 .tabs .container>div:hover {
@@ -180,8 +230,10 @@ img {
 
 /* Tab content */
 
+/* tab-1-content */
+
 .tab-content {
-    padding: 5rem 1rem;
+    padding: 2rem 1rem;
     color: white;
     background: black;
 }
@@ -216,6 +268,36 @@ img {
     text-align: center;
     top: 8%;
     right: 10%;
+}
+
+/* tab-2-content */
+
+#tab-2-content .tab-2-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* tab-3-content */
+
+#tab-3-content .tab-3-content-top {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 /* tabs-2 */
@@ -270,5 +352,7 @@ img {
     color: #999;
     font-size: 0.7rem;
     padding: 0.1rem;
-    ;
+    
 }
+
+
