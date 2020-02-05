@@ -551,34 +551,137 @@ img {
     padding: 0.1em;
 }
 
-/* @media (max-width:1000px) {
-    * {
-        color: red;
-    }
-    .showcase-content h1 {
-        font-size: 3em;
-    }
-    .showcase-content p {
-        font-size: 1.3em;
-    }
-    .btn-xl {
-        font-size: 1.3em;
-    }
-    #top>div.showcase-content>a>i {
-        font-size: 0em;
-    }
+@media (max-width:900px) {
+  
     .hide-sm {
         display: none;
     }
     .container {
-        max-width: 95%;
+        max-width: 95vw;
         margin: auto;
-        overflow: hidden;
+        scroll-behavior: smooth;
+        overflow-x: visible;
         padding: 0 2em;
     }
-} */
+    .showcase-top h1 {
+        /* font-size: 40px; */
+        max-width: 98%;
+        font-size: 2em;
+        text-align: center;
+        font-weight: bolder;
+        color: var(--primary-color);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+/*     
+    #tab-3-content .tab-3-content-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1px;
+        grid-template-areas: 'img1 img2' 'img3 img4''img5 img6';
+        width: 100%;
+        height: 65vh;
+        margin-top: 1vh;
+        background-repeat: repeat-x;
+        background-size: cover;
+        background-position: center;
 
-@media (max-width:800px) {
+       
+    } */
+    .showcase-top p, .showcase-top a {
+        color: #ccc;
+        position: absolute;
+        /* text-align: center; */
+        font-size: 0.7em;
+        background: var(--primary-color);
+        padding: 0.1em;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -90%);
+    }
+    .showcase-top a:hover {
+        color: white;
+    }
+    .table {
+        overflow-x: scroll !important;
+    }
+    .showcase-content h1 {
+        font-weight: 700;
+        max-width: 90vw;
+        font-size: 3em;
+        line-height: 1.1;
+        margin: 0 0 1em;
+    }
+    .showcase-content p {
+        color: #ccc;
+        font-weight: lighter;
+        font-size: 1em;
+        line-height: 1.25;
+        margin: 0 0 2.2em;
+    }
+    #tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6 {
+        padding: 0.2em;
+        padding-bottom: 0.6em;
+    }
+    /* .home-btn, .program-btn {
+        position: absolute;
+        text-align: center;
+        top: 12%;
+        left: 41%;
+    }
+    .reading-btn {
+        position: absolute;
+        text-align: center;
+        top: 12%;
+        right: 40%;
+    } */
+    #tab-4-content .tab-4-content-bottom .circle01 {
+        width: 180px;
+        height: 180px;
+        max-width: 100%;
+        margin: auto;
+        border-radius: 0%;
+        background-size: cover;
+        float: none;
+        shape-outside: square();
+        margin: 15px;
+    }
+    #tab-6-content .tab-6-content-bottom .circle02 {
+        width: 180px;
+        height: 180px;
+        max-width: 100%;
+        margin: auto;
+        border-radius: 0%;
+        background-size: cover;
+        float: none;
+        shape-outside: square();
+        margin: 15px;
+        margin-bottom: 0;
+    }
+    #tab-6-content .tab-6-content-bottom .text-content p, #tab-4-content .tab-4-content-bottom .text-content p {
+        padding-top: 0;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+    #tab-5-content {
+        padding: 1em;
+        border: 5px yellow dashed;
+    }
+    #tab-3-content>div.tab-3-content-top {
+        margin-bottom: 1em;
+    }
+    #tab-2-content>div.tab-2-content-bottom {
+        display: block;
+    }
+}
+
+@media (max-width:600px) {
     * {
         /* color: blue; */
     }
@@ -604,6 +707,8 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    
+    
     #tab-3-content .tab-3-content-bottom {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -613,9 +718,11 @@ img {
         width: 100%;
         height: 65vh;
         margin-top: 1vh;
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
         background-size: cover;
         background-position: center;
+
+       
     }
     .showcase-top p, .showcase-top a {
         color: #ccc;
