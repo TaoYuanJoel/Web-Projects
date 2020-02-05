@@ -551,7 +551,7 @@ img {
     padding: 0.1em;
 }
 
-@media (max-width:600px ) {
+@media (max-width:800px) {
     * {
         /* color: blue; */
     }
@@ -561,9 +561,9 @@ img {
     .container {
         max-width: 95vw;
         margin: auto;
+        padding: 0 2em;
         scroll-behavior: smooth;
         overflow-x: visible;
-        padding: 0 2em;
     }
     .showcase-top h1 {
         /* font-size: 40px; */
@@ -577,9 +577,6 @@ img {
         left: 50%;
         transform: translate(-50%, -50%);
     }
-    
-   
-    
     #tab-3-content .tab-3-content-bottom {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -592,8 +589,6 @@ img {
         background-repeat: repeat-x;
         background-size: cover;
         background-position: center;
-
-       
     }
     #tab-3-content .tab-3-content-bottom .game-img1 {
         grid-area: img1;
@@ -601,30 +596,26 @@ img {
         background-size: cover;
         background-position: center;
     }
-    
     #tab-3-content .tab-3-content-bottom .game-img2 {
         grid-area: img2;
         background: url(../../photo-gallery/img/img2.jpg);
         background-size: cover;
         background-position: 0;
     }
-    
     #tab-3-content .tab-3-content-bottom .game-img3 {
         grid-area: img3;
         background: url(../../photo-gallery/img/img3.jpg);
         background-repeat: repeat;
         background-size: cover;
-        background-position:  0;
+        background-position: 0;
     }
-    
     #tab-3-content .tab-3-content-bottom .game-img4 {
         grid-area: img4;
         background: url(../../photo-gallery/img/img4.jpg);
         background-repeat: repeat;
         background-size: cover;
-        background-position:  0;
+        background-position: 0;
     }
-    
     #tab-3-content .tab-3-content-bottom .game-img5 {
         grid-area: img5;
         background: url(../../photo-gallery/img/img5.jpg);
@@ -632,15 +623,13 @@ img {
         background-size: cover;
         background-position: 0;
     }
-    
     #tab-3-content .tab-3-content-bottom .game-img6 {
         grid-area: img6;
         background: url(../../photo-gallery/img/img6.jpg);
         background-repeat: repeat;
         background-size: cover;
-        background-position:  0;
+        background-position: 0;
     }
-    
     .showcase-top p, .showcase-top a {
         color: #ccc;
         position: absolute;
