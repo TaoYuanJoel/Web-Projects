@@ -148,16 +148,20 @@ img {
     transform: translate(-50%, -50%);
 }
 
-.showcase-top p {
+.showcase-top p, .showcase-top a {
     color: #ccc;
     position: absolute;
     /* text-align: center; */
     font-size: 0.7em;
     background: var(--primary-color);
-    padding: 0.1em;
+    padding: 0.3em;
     top: 50%;
     right: 2%;
     transform: translate(-50%, -90%);
+}
+
+.showcase-top a:hover {
+    color: white;
 }
 
 #top>div.showcase-content>a>i {
@@ -270,6 +274,7 @@ img {
 
 .tab-content {
     padding: 2.5em 1em;
+    padding-top: 4em;
     color: white;
     background: black;
 }
@@ -347,7 +352,7 @@ img {
     grid-template-areas: 'img1 img2 img3' 'img4 img5 img6';
     width: 100%;
     height: 65vh;
-    margin-top: 1vh;
+    margin-top: 2vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -412,39 +417,35 @@ img {
     margin-top: 2em;
 }
 
-#tab-4-content .tab-4-content-bottom .text-content{
+#tab-4-content .tab-4-content-bottom .text-content {
     margin-top: 1em;
 }
 
-#tab-4-content .tab-4-content-bottom .text-content p{
+#tab-4-content .tab-4-content-bottom .text-content p {
     line-height: 1.5;
     padding: 1.5em;
     text-align: justify;
 }
-#tab-4-content .tab-4-content-bottom .circle01{
 
+#tab-4-content .tab-4-content-bottom .circle01 {
     width: 180px;
     height: 180px;
     background: url(../../readings/reading-I/img/1.jpg);
-    border-radius:50%;
+    border-radius: 50%;
     background-size: cover;
     float: left;
     shape-outside: circle();
     margin: 15px;
-
 }
 
 /* tab-5-content */
 
-
-#tab-5-content{
+#tab-5-content {
     background: url(../../readings/reading-II/img/bg.jpg);
     background-size: 10%;
     border: 10px yellow dashed;
     padding: 2em;
     margin-top: 2em;
-
-
 }
 
 #tab-5-content .tab-5-content-top {
@@ -453,20 +454,19 @@ img {
     grid-gap: 1em;
     justify-content: center;
     align-items: center;
-   
 }
 
-#tab-5-content .tab-5-content-bottom  p{
+#tab-5-content .tab-5-content-bottom p {
     line-height: 1.5;
     text-align: justify;
 }
-#tab-5-content .tab-5-content-bottom  img{
-  
+
+#tab-5-content .tab-5-content-bottom img {
     padding-top: 1em;
-    
 }
 
 /* tab-6-content */
+
 #tab-6-content .tab-6-content-top {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -476,28 +476,28 @@ img {
     margin-top: 2em;
 }
 
-#tab-6-content .tab-6-content-bottom .text-content{
+#tab-6-content .tab-6-content-bottom .text-content {
     margin-top: 1em;
 }
 
-#tab-6-content .tab-6-content-bottom .text-content p{
+#tab-6-content .tab-6-content-bottom .text-content p {
     line-height: 1.5;
     padding: 1.5em;
     text-align: justify;
 }
-#tab-6-content .tab-6-content-bottom .circle02{
 
+#tab-6-content .tab-6-content-bottom .circle02 {
     width: 180px;
     height: 180px;
     background: url(../../readings/reading-III/img/1.png);
-    border-radius:50%;
+    border-radius: 50%;
     background-size: cover;
-    background-position: -10px,0;
+    background-position: -10px, 0;
     float: left;
     shape-outside: circle();
     margin: 15px;
-
 }
+
 /* containers */
 
 .container {
@@ -551,7 +551,7 @@ img {
     padding: 0.1em;
 }
 
-@media (max-width:1000px) {
+/* @media (max-width:1000px) {
     * {
         color: red;
     }
@@ -576,30 +576,32 @@ img {
         overflow: hidden;
         padding: 0 2em;
     }
-}
+} */
 
-@media (max-width:600px) {
+@media (max-width:800px) {
     * {
-        color: blue;
+        /* color: blue; */
     }
     .hide-sm {
         display: none;
     }
     .container {
-        max-width: 95%;
+        max-width: 95vw;
         margin: auto;
-        overflow: hidden;
+        scroll-behavior: smooth;
+        overflow-x: visible;
         padding: 0 2em;
     }
     .showcase-top h1 {
         /* font-size: 40px; */
+        max-width: 98%;
         font-size: 2em;
         text-align: center;
         font-weight: bolder;
         color: var(--primary-color);
         position: absolute;
-        top: 50%;
-        left: 20%;
+        top: 45%;
+        left: 50%;
         transform: translate(-50%, -50%);
     }
     #tab-3-content .tab-3-content-bottom {
@@ -614,5 +616,94 @@ img {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    .showcase-top p, .showcase-top a {
+        color: #ccc;
+        position: absolute;
+        /* text-align: center; */
+        font-size: 0.7em;
+        background: var(--primary-color);
+        padding: 0.1em;
+        top: 50%;
+        right: 0%;
+        transform: translate(-50%, -90%);
+    }
+    .showcase-top a:hover {
+        color: white;
+    }
+    .table {
+        overflow-x: scroll !important;
+    }
+    .showcase-content h1 {
+        font-weight: 700;
+        max-width: 90vw;
+        font-size: 3em;
+        line-height: 1.1;
+        margin: 0 0 1em;
+    }
+    .showcase-content p {
+        color: #ccc;
+        font-weight: lighter;
+        font-size: 1em;
+        line-height: 1.25;
+        margin: 0 0 2.2em;
+    }
+    #tab-1, #tab-2, #tab-3, #tab-4, #tab-5, #tab-6 {
+        padding: 0.2em;
+        padding-bottom: 0.6em;
+    }
+    .home-btn, .program-btn {
+        position: absolute;
+        text-align: center;
+        top: 12%;
+        left: 41%;
+    }
+    .reading-btn {
+        position: absolute;
+        text-align: center;
+        top: 12%;
+        right: 40%;
+    }
+    #tab-4-content .tab-4-content-bottom .circle01 {
+        width: 180px;
+        height: 180px;
+        background: url(../../readings/reading-I/img/1.jpg);
+        max-width: 100%;
+        margin: auto;
+        border-radius: 0%;
+        background-size: cover;
+        float: none;
+        shape-outside: square();
+        margin: 15px;
+    }
+    #tab-6-content .tab-6-content-bottom .circle02 {
+        width: 180px;
+        height: 180px;
+        background: url(../../readings/reading-III/img/1.png);
+        max-width: 100%;
+        margin: auto;
+        border-radius: 0%;
+        background-size: cover;
+        float: none;
+        shape-outside: square();
+        margin: 15px;
+        margin-bottom: 0;
+    }
+    #tab-6-content .tab-6-content-bottom .text-content p, #tab-4-content .tab-4-content-bottom .text-content p {
+        padding-top: 0;
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+    }
+    #tab-5-content {
+        padding: 1em;
+        border: 5px yellow dashed;
+    }
+    #tab-3-content>div.tab-3-content-top {
+        margin-bottom: 1em;
+    }
+    #tab-2-content>div.tab-2-content-bottom {
+        display: block;
     }
 }
