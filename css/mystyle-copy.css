@@ -155,8 +155,8 @@ img {
     font-size: 0.7em;
     background: var(--primary-color);
     padding: 0.3em;
-    top: 50%;
-    right: 2%;
+    top: 56%;
+    right: 32%;
     transform: translate(-50%, -90%);
 }
 
